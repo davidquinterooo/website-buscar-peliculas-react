@@ -1,16 +1,37 @@
-# React + Vite
+# Buscador de Películas con React
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Aplicación desarrollada con React que permite buscar películas consumiendo la API de The Movie Database (TMDb).**
 
-Currently, two official plugins are available:
+El proyecto realiza peticiones HTTP utilizando `fetch()` y muestra dinámicamente información de las películas encontradas, incluyendo:
+- Póster,
+- Título,
+- Descripción.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Características
 
-## React Compiler
+- Búsqueda dinámica de películas.
+- Consumo de API REST.
+- Renderizado dinámico con React.
+- Manejo de estado con `useState`.
+- Interfaz simple y minimalista.
+- Visualización de pósters y descripciones.
 
-The React Compiler is currently not compatible with SWC. See [this issue](https://github.com/vitejs/vite-plugin-react/issues/428) for tracking the progress.
+## Tecnologías utilizadas
 
-## Expanding the ESLint configuration
+- React
+- JavaScript
+- JSX
+- CSS
+- Fetch API
+- TMDb API
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Funcionamiento
+
+1. El usuario escribe el nombre de una película.
+2. Se envía una petición a la API de TMDb.
+3. La aplicación recibe los resultados en formato JSON.
+4. React actualiza automáticamente la interfaz mostrando:
+   - imagen, título y descripción de cada película encontrada.
+├── main.jsx
+└── styles/
+    └── buscador.css
