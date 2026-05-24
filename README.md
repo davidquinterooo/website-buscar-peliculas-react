@@ -7,6 +7,8 @@ El proyecto realiza peticiones HTTP utilizando `fetch()` y muestra dinámicament
 - Título,
 - Descripción.
 
+![imagen de referncia](https://github.com/davidquinterooo/website-buscar-peliculas-react/blob/31c03aabbf67557e711c8e7a97a8ea10597fa6e3/Captura%20de%20pantalla%202026-05-24%20163135.png)
+
 ## Características
 
 - Búsqueda dinámica de películas.
@@ -32,6 +34,3 @@ El proyecto realiza peticiones HTTP utilizando `fetch()` y muestra dinámicament
 3. La aplicación recibe los resultados en formato JSON.
 4. React actualiza automáticamente la interfaz mostrando:
    - imagen, título y descripción de cada película encontrada.
-├── main.jsx
-└── styles/
-    └── buscador.css
